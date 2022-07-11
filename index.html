@@ -9,39 +9,57 @@
 </head>
 <body>
     <div class="hed-wrap">
-        <header>
+        <header class="header">
             <div class="logo">
-                <img src="imgs/Logo.svg" alt="logo">
+                <div class="logo__wrap">
+                    <img src="imgs/Logo.png" alt="logo">
+                </div>
+                <div class="logo__temporary">
+                    <img src="imgs/Slash.svg" alt="Slash">
+                </div>
+                <p class="name-page">
+                services
+                </p>
             </div>
             <div class="nav">
-                <div class="nav__about">
-                   <ul class="nav__about--content">
-                    <li class="nav__about">
-                        <a href="#" class="link-language">
-                            ук
-                        </a>
-                        <a href="#" class="link-language">
-                            ру
-                        </a>
-                        <a href="#" class="link-language--activ">
-                            en
-                        </a>
-                    </li>
-                    <li class="nav__about">
-                        <a href="https://goo.gl/maps/H9DNbS68V5GgG92o8" class="nav__about--address">
-                            Kyiv, Mechnikova str, 14/1
-                        </a>
-                    </li>
-                    <li class="nav__about">
-                        <a href="tel:+380800211927" class="nav__about--phone">0800 211 927</a>
-                    </li>
-                    <li class="nav__about">
-                        <img class="nav__about--facebook" src="imgs/Facebook-Header.svg" alt="Facebook">
-                    </li>
-                   </ul>
+                <div class="wrap-nav__about">
+                    <ul class="nav__about">
+                        <li class="nav__about--content">
+                            <div class="content__language">
+                                <a href="#" class="language__link">
+                                    ук
+                                </a>
+                                <a href="#" class="language__link">
+                                    ру
+                                </a>
+                                <a href="#" class="language__link--activ">
+                                    en
+                                </a>
+                            </div>
+                        </li>
+                        <li class="nav__about--content first">
+                            <a href="https://goo.gl/maps/H9DNbS68V5GgG92o8" class="nav__about--address">
+                                Kyiv, Mechnikova str, 14/1
+                            </a>
+                        </li>
+                        <li class="nav__about--content second">
+                            <a href="tel:+380800211927" class="nav__about--phone">0800 211 927</a>
+                        </li>
+                        <li class="nav__about--content third">
+                            <img class="nav__about--facebook" src="imgs/Facebook-Header.svg" alt="Facebook">
+                        </li>
+                    </ul>
                 </div>
+                <input type="checkbox" name="check-menu" id="check-menu">
+                <label for="check-menu">
+                    <img class="check-menu--hamburger" src="imgs/Hamburger.svg" alt="line Hamburger">
+                </label>
                 <div class="nav__menu">
                     <ul>
+                        <label for="check-menu">
+                            <img class="check-menu--hamburger close" src="imgs/Close.svg" alt="Close">
+                        </label>
+                        
                         <li class="nav__menu--item">
                             <a href="about.html" class="nav__menu--link">
                                 about us
@@ -74,7 +92,7 @@
         <div class="hero">
             <div class="slogan">
                 <div class="slogan__img">
-                    <img src="imgs/Symbol.svg" alt="hero-logo">
+                    <!-- <img src="imgs/Symbol.svg" alt="hero-logo"> -->
                 </div>
                 <h1 class="slogan__text">
                     you legal solutions provider
